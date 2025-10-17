@@ -7,6 +7,19 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+html, body {
+  overflow-x: hidden;
+}
+
+.hero, .about, .products, .home-products {
+  padding: 20px; /* instead of 10% + big pixel padding */
+  max-width: 100%;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
 
 /* ==========================
    HEADER
